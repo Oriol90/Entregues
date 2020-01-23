@@ -1,0 +1,49 @@
+
+  body{
+    background-color: rgb(223, 6, 60);
+  }
+
+  #buttonECommerce{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-left: 20px;
+    width: 250px;
+    height: 50px;
+  }
+  
+  .logger{
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  
+  .franja{
+    justify-content: center;
+  }
+  
+  .section{
+    padding-top: 7px;
+    padding-bottom: 4px;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px ;
+    background-color: white;
+    border-color: white;
+  }
+  
+  #libros{
+    margin-top: 100px;
+    justify-content: center;
+    display:flex;
+  }
+  
+  .imgLibros{
+    margin-left: 5px;
+    margin-right: 5px ;
+  }
+  
+  .section:hover{
+    background-color: black;
+    color: white;
+  }
