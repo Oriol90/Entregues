@@ -3,20 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Llibreria</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/estilosLibreria.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/estilsLibreria.css" type="text/css" media="all" />
 
 </head>
 
 <body>
+<div class="container">  
 
-  <button type="button" id="buttonECommerce" class="btn btn-success btn-lg ">MY eCommerce!</button>
-  <button type="button" class="logger btn btn-outline-warning">Log-In</button>
-  <button type="button" class="logger btn btn-outline-warning">Sign-In</button>
-
+  <form class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="col-md-3 m-2">
+          <input type="text" class="col-md-12 mt-1 form-control" placeholder="Mail.." pattern=".+@.+\..+" required>
+            <div class="invalid-feedback">El format de l'e-mail es incorrecte.</div>
+            <div class="valid-feedback">Correcte.</div>
+          <input type="password" class="col-md-12 mt-1 form-control" placeholder="Contrasenya" required>
+      </div>
+      <div class="col-md-3 m-2">
+        <button type="submit" class="mt-1 btn btn-outline-warning">Log-In</button>
+        <a href="registre.html"><button type="button" class="mt-1 btn btn-outline-warning">Sign-In</button></a>
+      </div>
+    </div>
+  </form>
+  
   <nav class="navbar-expand-md navbar-dark bg-dark justify-content-center">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,6 +48,16 @@
           <a class="nav-link" href="#">Section4</a>
         </li>        
       </ul>
+      <div class="col-md-3">
+        <form class="validarCerca" novalidate>
+          <div class="col-md-12 mt-1 mb-1 input-group">
+            <input type="text" class="form-control" placeholder="Cercar..." aria-label="Cerca!" aria-describedby="basic-addon2" pattern="[A-Za-z]{3,}" required> 
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Cercar</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </nav>
 
@@ -49,15 +70,16 @@
       <div class="col"><img class="imgLibros" src="img/Libro.ico"></div>
       <div class="col"><img class="imgLibros" src="img/Libro.ico"></div>
       <div class="col"><img class="imgLibros" src="img/Libro.ico"></div>
-    </div>
+    </div> 
 
-  </div>
+</div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+  <script src="scripts/scriptsLlibreria.js"></script>
+
 </body>
 </html>

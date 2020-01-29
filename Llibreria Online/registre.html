@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Llibreria</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<style>
+  body{
+    background-color: rgb(2, 219, 190);
+    padding-top: 20px;
+  }
+</style>
+
+<body>
+
+
+<div class="container">
+
+  <h2>Registre</h2>
+  <hr>
+
+  <form class="formRegistre" novalidate>
+  <div class="form-row mt-1">
+    <div class="col-md-4">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" class="form-control" required>
+    </div>
+    <div class="col-md-4">
+      <label for="cnom1">Primer Cognom</label>
+      <input type="text" id="cnom1" class="form-control" required>
+    </div>
+    <div class="col-md-4">
+      <label for="cnom2">Segon cognom</label>
+      <input type="text" id="cnom2" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-row mt-1">
+    <div class="col-md-6">
+      <label for="adreça">Adreça</label>
+      <input type="text" id="adreça" class="form-control" required>
+    </div>
+    <div class="col-md-3">
+      <label for="cp">Codi Postal</label>
+      <input type="text" id="cp" class="form-control">
+    </div>
+    <div class="col-md-3">
+      <label for="selectProvincia">Província</label>
+      <select class="form-control" id="selectProvincia">
+        <option>Barcelona</option>
+        <option>Girona</option>
+        <option>Lleida</option>
+        <option>Tarragona</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row mt-1">
+    <div class="col-md-4">
+      <label for="mail">Correu electrònic</label>
+      <input type="text" id="mail" class="form-control" pattern=".+@.+\..+" required>
+    </div>
+    <div class="col-md-3">
+      <label for="pass">Contrasenya</label>
+      <input type="password" id="pass" class="form-control" required>
+    </div>
+    <div class="col-md-3">
+      <label for="passR">Repetir contrasenya</label>
+      <input type="password" id="passR" class="form-control" required>
+      <div class="invalid-feedback">La contrasenya no coincideix.</div>
+    </div>
+    <div class="col-md-2">
+      <div class="collapse" id="collapseOK">
+        <div class="card card-body">
+          Registre exitós.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row mt-3">
+    <div class="col-md-2">
+      <input type="submit" id="btnSubmit" class="btn btn-info"></input>
+    </div>
+  </div>
+
+</form>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="scripts/scriptsRegistre.js"></script>
+
+</body>
+</html>

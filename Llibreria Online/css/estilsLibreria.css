@@ -1,7 +1,13 @@
 
   body{
-    background-color: rgb(223, 6, 60);
+    background-color: rgb(255, 106, 7);
   }
+
+  .form-control:focus {
+    outline: 0 !important;
+    border-color: initial;
+    box-shadow: none;
+}
 
   #buttonECommerce{
     margin-bottom: 7px;
